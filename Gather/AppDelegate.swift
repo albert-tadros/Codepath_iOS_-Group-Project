@@ -12,14 +12,37 @@ import Parse
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
         Parse.initialize(with: ParseClientConfiguration(block: { configuration in
             configuration.applicationId = APPLICATION_ID
             configuration.clientKey = CLIENT_KEY
             configuration.server = SERVER
         }))
-        // Override point for customization after application launch.
+        
+//        let currentUser = PFUser.current()
+//        if currentUser != nil {
+//            let authorId = PFUser.current()!.objectId
+//            let query = PFQuery(className: "_User")
+//            query.whereKey("objectId", equalTo: authorId!)
+//            query.getObjectInBackground(withId: authorId!) { (user:PFObject?, error:Error?) in
+//                if let error = error {
+//                    print("can't find object", error.localizedDescription)
+//                } else if let user = user {
+//                        // load the profile image
+//                        let profileImageFile = user["profile_image"] as! PFFileObject
+//                        let urlString = profileImageFile.url!
+//                        let url = URL(string : urlString)
+//                        print("in app delegate: imageURL", url!)
+//                        ProfileViewController.imageURL = url
+//                        EditProfileViewController.imageURL = url
+//                    }
+//                }
+//        }
         return true
     }
+
+        // Override point for customization after application launch.
+
 
     // MARK: UISceneSession Lifecycle
 

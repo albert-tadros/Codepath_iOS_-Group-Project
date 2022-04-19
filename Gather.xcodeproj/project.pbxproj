@@ -19,7 +19,6 @@
 		6AAC9175280A800B00FDE42D /* ProfileInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC9174280A800B00FDE42D /* ProfileInfoCell.swift */; };
 		6AAC9177280A839D00FDE42D /* EditProfileImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC9176280A839D00FDE42D /* EditProfileImageCell.swift */; };
 		6AAC9179280A83AF00FDE42D /* EditProfileInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC9178280A83AF00FDE42D /* EditProfileInfoCell.swift */; };
-		6AAC917B280A9A8500FDE42D /* uploadProfileImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAC917A280A9A8500FDE42D /* uploadProfileImageViewController.swift */; };
 		6AB6B4F727EAC9C700A7E221 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB6B4F627EAC9C700A7E221 /* AppDelegate.swift */; };
 		6AB6B4F927EAC9C700A7E221 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB6B4F827EAC9C700A7E221 /* SceneDelegate.swift */; };
 		6AB6B4FB27EAC9C700A7E221 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB6B4FA27EAC9C700A7E221 /* ViewController.swift */; };
@@ -31,9 +30,10 @@
 		6AB6B51A27EAC9C800A7E221 /* EftekadUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB6B51927EAC9C800A7E221 /* EftekadUITestsLaunchTests.swift */; };
 		6AB6B52727EACAFA00A7E221 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB6B52627EACAFA00A7E221 /* HomeTableViewController.swift */; };
 		6AB6B52927EAD03000A7E221 /* MonthCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB6B52827EAD03000A7E221 /* MonthCellTableViewCell.swift */; };
-		6AB6B52B27EAD81600A7E221 /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB6B52A27EAD81600A7E221 /* NotesTableViewController.swift */; };
-		6AB6B52D27EAE28D00A7E221 /* NewNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB6B52C27EAE28D00A7E221 /* NewNoteViewController.swift */; };
+		6AB6B52B27EAD81600A7E221 /* TasksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB6B52A27EAD81600A7E221 /* TasksTableViewController.swift */; };
+		6AB6B52D27EAE28D00A7E221 /* NewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB6B52C27EAE28D00A7E221 /* NewTaskViewController.swift */; };
 		6AC84D182808DF260049FCC5 /* RegisterContViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC84D172808DF260049FCC5 /* RegisterContViewController.swift */; };
+		6AE8CC17280D1A220034BF79 /* UploadProfileImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE8CC16280D1A220034BF79 /* UploadProfileImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +67,6 @@
 		6AAC9174280A800B00FDE42D /* ProfileInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoCell.swift; sourceTree = "<group>"; };
 		6AAC9176280A839D00FDE42D /* EditProfileImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileImageCell.swift; sourceTree = "<group>"; };
 		6AAC9178280A83AF00FDE42D /* EditProfileInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileInfoCell.swift; sourceTree = "<group>"; };
-		6AAC917A280A9A8500FDE42D /* uploadProfileImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uploadProfileImageViewController.swift; sourceTree = "<group>"; };
 		6AB6B4F327EAC9C700A7E221 /* Gather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AB6B4F627EAC9C700A7E221 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AB6B4F827EAC9C700A7E221 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,9 +82,10 @@
 		6AB6B51927EAC9C800A7E221 /* EftekadUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EftekadUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6AB6B52627EACAFA00A7E221 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		6AB6B52827EAD03000A7E221 /* MonthCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthCellTableViewCell.swift; sourceTree = "<group>"; };
-		6AB6B52A27EAD81600A7E221 /* NotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
-		6AB6B52C27EAE28D00A7E221 /* NewNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNoteViewController.swift; sourceTree = "<group>"; };
+		6AB6B52A27EAD81600A7E221 /* TasksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTableViewController.swift; sourceTree = "<group>"; };
+		6AB6B52C27EAE28D00A7E221 /* NewTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskViewController.swift; sourceTree = "<group>"; };
 		6AC84D172808DF260049FCC5 /* RegisterContViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterContViewController.swift; sourceTree = "<group>"; };
+		6AE8CC16280D1A220034BF79 /* UploadProfileImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadProfileImageViewController.swift; sourceTree = "<group>"; };
 		93F0270380C7910C3DE1EDD4 /* Pods-Eftekad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Eftekad.debug.xcconfig"; path = "Target Support Files/Pods-Eftekad/Pods-Eftekad.debug.xcconfig"; sourceTree = "<group>"; };
 		946ED86EAC596B0F52392CFF /* Pods_Gather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB689A8B006F9F78104892FA /* Pods-Gather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gather.debug.xcconfig"; path = "Target Support Files/Pods-Gather/Pods-Gather.debug.xcconfig"; sourceTree = "<group>"; };
@@ -147,19 +147,19 @@
 				6AB6B4FA27EAC9C700A7E221 /* ViewController.swift */,
 				6A22A9F227EB302C003E1449 /* SideMenu.swift */,
 				6AB6B4FC27EAC9C700A7E221 /* Main.storyboard */,
-				6AAC917A280A9A8500FDE42D /* uploadProfileImageViewController.swift */,
+				6AE8CC16280D1A220034BF79 /* UploadProfileImageViewController.swift */,
 				6AAC9176280A839D00FDE42D /* EditProfileImageCell.swift */,
 				6AAC9178280A83AF00FDE42D /* EditProfileInfoCell.swift */,
 				6AC84D172808DF260049FCC5 /* RegisterContViewController.swift */,
 				6AAC916E280A7F8900FDE42D /* ProfileViewController.swift */,
-				6AAC9170280A7F9C00FDE42D /* EditProfileViewController.swift */,
 				6AAC9172280A7FE600FDE42D /* ProfileImageCell.swift */,
 				6AAC9174280A800B00FDE42D /* ProfileInfoCell.swift */,
 				6A263F0E2808D1D800127D7B /* Api_keys.swift */,
 				6A50909F27EF8A100087C33A /* LoginViewController.swift */,
 				6A5090A127EF8A2F0087C33A /* RegisterViewController.swift */,
-				6AB6B52C27EAE28D00A7E221 /* NewNoteViewController.swift */,
-				6AB6B52A27EAD81600A7E221 /* NotesTableViewController.swift */,
+				6AAC9170280A7F9C00FDE42D /* EditProfileViewController.swift */,
+				6AB6B52C27EAE28D00A7E221 /* NewTaskViewController.swift */,
+				6AB6B52A27EAD81600A7E221 /* TasksTableViewController.swift */,
 				6A22A9F027EAF167003E1449 /* NoteCellTableViewCell.swift */,
 				6AB6B52627EACAFA00A7E221 /* HomeTableViewController.swift */,
 				6AB6B52827EAD03000A7E221 /* MonthCellTableViewCell.swift */,
@@ -385,8 +385,7 @@
 				6AB6B4FB27EAC9C700A7E221 /* ViewController.swift in Sources */,
 				6A5090A227EF8A2F0087C33A /* RegisterViewController.swift in Sources */,
 				6AAC9175280A800B00FDE42D /* ProfileInfoCell.swift in Sources */,
-				6AAC917B280A9A8500FDE42D /* uploadProfileImageViewController.swift in Sources */,
-				6AB6B52D27EAE28D00A7E221 /* NewNoteViewController.swift in Sources */,
+				6AB6B52D27EAE28D00A7E221 /* NewTaskViewController.swift in Sources */,
 				6AAC916F280A7F8900FDE42D /* ProfileViewController.swift in Sources */,
 				6AAC9173280A7FE600FDE42D /* ProfileImageCell.swift in Sources */,
 				6AAC9179280A83AF00FDE42D /* EditProfileInfoCell.swift in Sources */,
@@ -394,11 +393,12 @@
 				6AB6B4F727EAC9C700A7E221 /* AppDelegate.swift in Sources */,
 				6AB6B4F927EAC9C700A7E221 /* SceneDelegate.swift in Sources */,
 				6AAC9171280A7F9C00FDE42D /* EditProfileViewController.swift in Sources */,
-				6AB6B52B27EAD81600A7E221 /* NotesTableViewController.swift in Sources */,
+				6AB6B52B27EAD81600A7E221 /* TasksTableViewController.swift in Sources */,
 				6AB6B52927EAD03000A7E221 /* MonthCellTableViewCell.swift in Sources */,
 				6AAC9177280A839D00FDE42D /* EditProfileImageCell.swift in Sources */,
 				6A5090A027EF8A100087C33A /* LoginViewController.swift in Sources */,
 				6A263F0F2808D1D800127D7B /* Api_keys.swift in Sources */,
+				6AE8CC17280D1A220034BF79 /* UploadProfileImageViewController.swift in Sources */,
 				6A22A9F127EAF167003E1449 /* NoteCellTableViewCell.swift in Sources */,
 				6AC84D182808DF260049FCC5 /* RegisterContViewController.swift in Sources */,
 			);

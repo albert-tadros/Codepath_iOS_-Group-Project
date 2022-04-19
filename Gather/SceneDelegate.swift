@@ -11,21 +11,39 @@ import Parse
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    
+    let group = DispatchGroup()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
-        let currentUser = PFUser.current()
         
+        
+        let currentUser = PFUser.current()
+        // user stays loggined if user did not log out
         if currentUser != nil {
+            self.group.enter()
+            let authorId = PFUser.current()!.objectId
+            let query = PFQuery(className: "_User")
+            query.whereKey("objectId", equalTo: authorId!)
+            query.getObjectInBackground(withId: authorId!) { (user:PFObject?, error:Error?) in
+                if let error = error {
+                    print("can't find object", error.localizedDescription)
+                } else if let user = user {
+                    ProfileViewController.userData = user  as! PFUser
+                    EditProfileViewController.userData = user as! PFUser
+                        self.group.leave()
+                    }
+            }
+            self.group.notify(queue: .main, execute: {
             let main = UIStoryboard(name: "Main", bundle: nil)
             let tabNavigiationController = main.instantiateViewController(withIdentifier: "TabNavigationController")
-            window?.rootViewController = tabNavigiationController
-        }
+                self.window?.rootViewController = tabNavigiationController
+        })
     }
+}
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
