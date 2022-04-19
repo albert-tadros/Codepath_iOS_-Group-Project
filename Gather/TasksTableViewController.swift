@@ -9,7 +9,7 @@ import UIKit
 import NaturalLanguage
 
 
-class NotesTableViewController: UITableViewController {
+class TasksTableViewController: UITableViewController {
     
     //var passedNotesArr : [String] = NewNoteViewController.notesArr
     static var cellIndex : Int = 0
@@ -33,7 +33,7 @@ class NotesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //print("passedNotesArr", NotesTableViewController.NotesArr)
-        NewNoteViewController.month = Month
+        NewTaskViewController.month = Month
         print("month is", Month)
         //initializeMainDictionary()
         self.tableView.reloadData()
@@ -92,7 +92,7 @@ class NotesTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return NotesTableViewController.NotesArr.count
+        return TasksTableViewController.NotesArr.count
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "noteCell", for: indexPath) as! NoteCellTableViewCell
@@ -105,20 +105,20 @@ class NotesTableViewController: UITableViewController {
 //        cell.noteContentLabel.text = note["noteContent"]
         
         
-        cell.noteTitleLabel.text = NotesTableViewController.TitleArr[indexPath.row]
+        cell.noteTitleLabel.text = TasksTableViewController.TitleArr[indexPath.row]
 
         // adjusting the label alignment based on the user input language
-        if NotesTableViewController.LangForNoteTitleLabel == "Arabic"{
+        if TasksTableViewController.LangForNoteTitleLabel == "Arabic"{
             cell.noteTitleLabel.textAlignment = NSTextAlignment.right
         }else {
             cell.noteTitleLabel.textAlignment = NSTextAlignment.natural
         }
         
         
-        cell.noteContentLabel.text = NotesTableViewController.NotesArr[indexPath.row]
+        cell.noteContentLabel.text = TasksTableViewController.NotesArr[indexPath.row]
         
         // adjusting the label alignment based on the user input language
-        if NotesTableViewController.LangForNoteContentLabel == "Arabic"{
+        if TasksTableViewController.LangForNoteContentLabel == "Arabic"{
             cell.noteContentLabel.textAlignment = NSTextAlignment.right
         }else {
             cell.noteTitleLabel.textAlignment = NSTextAlignment.natural

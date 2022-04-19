@@ -56,13 +56,13 @@ class EditProfileInfoCell: UITableViewCell, UITextFieldDelegate {
     
     
     
-//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {   //delegate method
-//
-//        userProfessionalTitleField.resignFirstResponder()
-//        userEmailField.resignFirstResponder()
-//        userPhoneNumField.resignFirstResponder()
-//      return true
-//    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {   //delegate method
+
+        userProfessionalTitleField.resignFirstResponder()
+        userEmailField.resignFirstResponder()
+        userPhoneNumField.resignFirstResponder()
+      return true
+    }
     
 
     override func setSelected(_ selected: Bool, animated: Bool) {

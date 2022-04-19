@@ -8,7 +8,7 @@
 import UIKit
 import NaturalLanguage
 
-class NewNoteViewController: UIViewController {
+class NewTaskViewController: UIViewController {
     
     var noteTitleArr : [String] = []
     var notesArr : [String] = []
@@ -26,7 +26,7 @@ class NewNoteViewController: UIViewController {
         super.viewDidLoad()
         noteTitleField.becomeFirstResponder()
         noteContentView.becomeFirstResponder()
-        print("inisde new note view and month is", NewNoteViewController.month)
+        print("inisde new note view and month is", NewTaskViewController.month)
         
 
         // Do any additional setup after loading the view.
@@ -37,8 +37,8 @@ class NewNoteViewController: UIViewController {
         let noteTitle = noteTitleField.text!
         let noteContent = noteContentView.text!
         
-        NotesTableViewController.LangForNoteTitleLabel = detectedLanguage(for: noteTitle)!
-        NotesTableViewController.LangForNoteContentLabel = detectedLanguage(for: noteContent)!
+        TasksTableViewController.LangForNoteTitleLabel = detectedLanguage(for: noteTitle)!
+        TasksTableViewController.LangForNoteContentLabel = detectedLanguage(for: noteContent)!
         
 //        let mainDic = NotesTableViewController.mainDic
 //        let monthsDic = mainDic["months"] as! [String: Any]
@@ -57,8 +57,8 @@ class NewNoteViewController: UIViewController {
         //print("noteDic[title]", notesDic["notes"]!)
         //print(" inside new note Main Dic is: \n", NotesTableViewController.mainDic)
         
-        NotesTableViewController.TitleArr.append(noteTitle)
-        NotesTableViewController.NotesArr.append(noteContent)
+        TasksTableViewController.TitleArr.append(noteTitle)
+        TasksTableViewController.NotesArr.append(noteContent)
         
 //        print("I am before performSegue")
 //        performSegue(withIdentifier: "AddToNoteCell", sender: self)

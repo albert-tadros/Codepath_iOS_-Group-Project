@@ -53,7 +53,7 @@ class HomeTableViewController: UITableViewController {
         //NotesTableViewController.Month = cell.monthViewLabel.text!
         
         //just for API
-        NotesTableViewController.cellIndex = indexPath.row
+        TasksTableViewController.cellIndex = indexPath.row
         self.tableView.deselectRow(at: indexPath, animated: true)
         
         return cell
@@ -63,7 +63,7 @@ class HomeTableViewController: UITableViewController {
     //        //print("Loading up the details")
         let cell = sender as! UITableViewCell
         let indexPath = tableView.indexPath(for: cell)!
-        let notesViewController = segue.destination as! NotesTableViewController
+        let notesViewController = segue.destination as! TasksTableViewController
         notesViewController.Month = months[indexPath.row]
         
     }
