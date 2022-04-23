@@ -35,6 +35,7 @@
 **Optional Nice-to-have Stories**
 
 * User can edit the priority of each task and each task will be highlighted with different color according to its prioroty
+* User can add timeline for schedule via calendar
 * User can get alert if the task is over due
 
 ### 2. Screen Archetypes
@@ -111,3 +112,7 @@ Part 1
 Part 2
 
 ![gather_w8_pt2](https://user-images.githubusercontent.com/78925894/163688493-c2b8bc1b-7c31-4f56-9b8b-62ef49ad0948.gif)
+
+### App Demo (Unit 9)
+
+![gather_w9_pt1](http://g.recordit.co/jLHn0QI3EW.gif)
